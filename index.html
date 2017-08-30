@@ -38,6 +38,28 @@
     /* for nav bar*/
     margin-top: 50px;
     }
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#battery { font-size: 4rem; }
+
+#battery:after {
+    animation: charging 4s infinite;
+    content: "\f244";
+}
+
+@keyframes charging {
+    0% { content: "\f244"; }
+    20% { content: "\f243"; }
+    40% { content: "\f242"; }
+    60% { content: "\f241"; }
+    80% { content: "\f240"; }
+    100% { content: "\f244"; }
+}
+}
 
 
     </style>
@@ -66,13 +88,28 @@
     </nav>
     <div class="container">
       <!-- Example row of columns -->
+
+
+
+
+
+
+
+
+
+
+
+
       <div class="row">
         <div class="col-md-2">
         </div>
         <div class="col-md-8">
-        
+
+
+
         <img class="center-block" src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Confederation_college_logo.jpg/250px-Confederation_college_logo.jpg" alt="">
           <hr>
+
 
         Rob McCormack, P. Eng. <br>
         Professor, IMD Program<br>
@@ -107,8 +144,11 @@
           <li><a href="https://mrmccormack.github.io/sig/">https://mrmccormack.github.io/sig/</a></li>
         </ul>
         <hr>
+        <span id="battery" class="fa"></span>
       </div>
       <div class="col-md-2">
+        asdf
+        <span id="battery" class="fa"></span>
       </div>
     </div>
     <hr>
@@ -116,7 +156,7 @@
       <i class="class="fa fa-linkedin" aria-hidden="true"></i>
 
 
-      
+
 
     </footer>
     </div>  <!-- /container -->
