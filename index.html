@@ -43,7 +43,22 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+#battery { font-size: 4rem; }
 
+#battery:after {
+    animation: charging 4s infinite;
+    content: "\f244";
+}
+
+@keyframes charging {
+    0% { content: "\f244"; }
+    20% { content: "\f243"; }
+    40% { content: "\f242"; }
+    60% { content: "\f241"; }
+    80% { content: "\f240"; }
+    100% { content: "\f244"; }
+}
 }
 
 
@@ -129,8 +144,11 @@ body {
           <li><a href="https://mrmccormack.github.io/sig/">https://mrmccormack.github.io/sig/</a></li>
         </ul>
         <hr>
+        <span id="battery" class="fa"></span>
       </div>
       <div class="col-md-2">
+        asdf
+        <span id="battery" class="fa"></span>
       </div>
     </div>
     <hr>
